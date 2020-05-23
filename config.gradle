@@ -85,6 +85,7 @@ ext {
 //            "rxpermissions": 'com.github.tbruyelle:rxpermissions:0.10.2',
             "coroutines"   : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1",
             "mmkv"         :'com.tencent:mmkv-static:1.1.1'
+             "autosize"    :"me.jessyan:autosize:1.2.1" // 屏幕适配 //https://github.com/JessYanCoding/AndroidAutoSize
     ]
 
     otherDeps = [

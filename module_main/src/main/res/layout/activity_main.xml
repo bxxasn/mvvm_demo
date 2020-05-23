@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btn_openMine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打开mine界面" />
+
+        <Button
+            android:id="@+id/btn_callMine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跟mine通讯" />
+
+        <Button
+            android:id="@+id/btn_goFragment"
+            android:text="测试baseFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</layout>

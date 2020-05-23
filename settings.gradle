@@ -1,0 +1,5 @@
+rootProject.name='anroid_mvvm'
+include ':app'
+include ':module_library'
+include ':module_mine'
+include ':module_main'

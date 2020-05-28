@@ -12,5 +12,7 @@ class MineMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Log.e("ABBBBBBBBBBBBBBBBBBBBB","BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB")
         setContentView(R.layout.activity_mine_main)
+
+
     }
 }

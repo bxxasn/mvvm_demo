@@ -5,8 +5,8 @@ import android.util.Log
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.demo.library.services.IMineService
 
-@Route(path = "/yourservicegroupname/single")
-public class MineServiceImpl : IMineService {
+@Route(path = "/testAAA/single")
+ class MineServiceImpl : IMineService {
     override fun getNewsName(): String {
         return "AAAAAAAAAAAAAAAAAA"
     }

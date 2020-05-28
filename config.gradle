@@ -84,8 +84,13 @@ ext {
             "arouter"      : 'com.alibaba:arouter-api:1.5.0',
 //            "rxpermissions": 'com.github.tbruyelle:rxpermissions:0.10.2',
             "coroutines"   : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1",
-            "mmkv"         :'com.tencent:mmkv-static:1.1.1'
-             "autosize"    :"me.jessyan:autosize:1.2.1" // 屏幕适配 //https://github.com/JessYanCoding/AndroidAutoSize
+            "mmkv"         :'com.tencent:mmkv-static:1.1.1',
+             "autosize"    :"me.jessyan:autosize:1.2.1", // 屏幕适配 //https://github.com/JessYanCoding/AndroidAutoSize
+           //  "xlog"        :"com.tencent.mars:mars-xlog:1.2.3" , //日志//https://github.com/Tencent/mars#mars_cn
+            "logger"       :"com.orhanobut:logger:2.2.0",  //https://github.com/orhanobut/logger
+            "bottom"       :'me.majiajie:pager-bottom-tab-strip:2.3.0X' //底部的NavigationView //https://github.com/tyzlmjj/PagerBottomTabStrip/wiki/V2_%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA
+
+
     ]
 
     otherDeps = [

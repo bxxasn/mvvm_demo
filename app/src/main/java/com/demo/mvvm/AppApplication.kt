@@ -3,6 +3,11 @@ package com.demo.mvvm
 import com.alibaba.android.arouter.launcher.ARouter
 import com.app.lib.base.BaseApplication
 import com.demo.library.initconfig.ModuleLifecycleConfig
+import com.orhanobut.logger.AndroidLogAdapter
+import com.orhanobut.logger.FormatStrategy
+import com.orhanobut.logger.Logger
+import com.orhanobut.logger.PrettyFormatStrategy
+
 
 class AppApplication :BaseApplication(){
 
@@ -14,5 +19,12 @@ class AppApplication :BaseApplication(){
         ARouter.openLog()
         ARouter.openDebug()
         ARouter.init(this)
+
+        //日志
+        Logger.addLogAdapter(object : AndroidLogAdapter() {
+            override fun isLoggable(priority: Int, tag: String?): Boolean {
+                return BuildConfig.DEBUG
+            }
+        })
     }
 }

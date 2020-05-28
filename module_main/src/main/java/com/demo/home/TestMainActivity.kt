@@ -4,16 +4,21 @@ import android.os.Bundle
 import com.alibaba.android.arouter.facade.annotation.Autowired
 import com.alibaba.android.arouter.launcher.ARouter
 import com.demo.home.databinding.ActivityMainBinding
+import com.demo.home.databinding.ActivityTestMainBinding
 import com.demo.library.base.BaseActivity
 import com.demo.library.services.IMineService
 import com.demo.library.widget.ToastUtil
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_test_main.*
 
 
 //@Route(path = RouterActivityPath.Main.MAIN)
-public class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>() {
+public class TestMainActivity : BaseActivity<MainViewModel, ActivityTestMainBinding>() {
 
-    override fun layoutId(): Int = R.layout.activity_main
+    //todo Arouter的测试
+
+
+    override fun layoutId(): Int = R.layout.activity_test_main
 
     @JvmField
     @Autowired(name="/testAAA/single")

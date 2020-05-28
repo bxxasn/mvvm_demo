@@ -8,29 +8,28 @@
 
     </data>
 
-    <LinearLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        tools:context=".ui.MainActivity"
+        android:id="@+id/cl_main_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".MainActivity">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btn_openMine"
+        <com.demo.home.ui.widgets.CustomNoTouchViewPager
+            android:id="@+id/cv_content_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="打开mine界面" />
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
 
-        <Button
-            android:id="@+id/btn_callMine"
+        <me.majiajie.pagerbottomtabstrip.PageNavigationView
+            android:id="@+id/bottom_view"
+            android:elevation="8dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="跟mine通讯" />
+            android:layout_height="56dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            app:layout_behavior="com.demo.home.behavior.BottomNavigationBehavior"
+            />
 
-        <Button
-            android:id="@+id/btn_goFragment"
-            android:text="测试baseFragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-    </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
